@@ -1,0 +1,297 @@
+:root {
+  --cor01: #222;
+  --cor02: #F6982d;
+  --messageTextColor: #004085;
+  --messageBackgroundColor: #cce5ff;
+  --messageBorderColor: #b8daff;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor01);
+  color: #fff;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+  display: flex;
+  padding: 1.2em 1.4em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor01);
+  border-bottom: 1px solid var(--cor02);
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  transition: .5s;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover {
+  color: var(--cor02);
+}
+
+/* CONTAINER */
+
+.container {
+  min-height: 60vh;
+  padding: 2em;
+}
+
+/* MESSAGE */
+
+.message {
+  width: 60%;
+  background-color: var(--messageBackgroundColor);
+  color: var(--messageTextColor);
+  border: 1px solid var(--messageBorderColor);
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto 2em;
+  border-radius: 5px;
+}
+
+/* LOGIN E REGISTER */
+
+.auth-container {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container h2 {
+  margin-bottom: 1em;
+  color: #fff;
+  border-left: 4px solid var(--cor02);
+  padding: .3em;
+  width: 100px;
+}
+
+.auth-container a {
+  color: var(--cor02);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.form-control :where(input, textarea) {
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid var(--cor02);
+}
+
+form input[type='submit'],
+.btn {
+  background-color: transparent;
+  color: var(--cor02);
+  border: 2px solid var(--cor02);
+  padding: .5em 1.2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .5s;
+}
+
+form input[type='submit']:hover,
+.btn:hover {
+  background-color: var(--cor02);
+  color: #fff;
+}
+
+/* CREATE / EDIT FORM */
+.tought-form-container a {
+  color: var(--cor02);
+}
+
+.tought-form-container a:hover {
+  color: #FFF;
+}
+
+.tought-form-container h1 {
+  margin-bottom: 1em;
+  color: #FFF;
+  border-left: 4px solid var(--cor02);
+  padding: 0.3em;
+  margin-top: 1em;
+}
+
+.tought-form-container form {
+  max-width: 50%;
+  margin-top: 1.5em;
+}
+
+
+/* DASHBOARD */
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.title-container h2 {
+  border-left: 4px solid var(--cor02);
+  padding: 10px;
+}
+
+.dashboard h3 {
+  margin-bottom: 1.5em;
+}
+
+.dashboard ul {
+  list-style: none;
+}
+
+.dashboard li {
+  padding: 12px;
+  border-bottom: 1px solid var(--cor02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .label {
+  font-weight: bold;
+  color: var(--cor02);
+  margin-right: 2em;
+}
+
+.dashboard .actions {
+  display: flex;
+}
+
+.dashboard .actions .btn {
+  color: #fff;
+  border-color: #fff;
+  margin: 0 1em;
+}
+
+.dashboard a {
+  color: var(--cor02)
+}
+
+/* HOME */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-header h1 {
+  margin-bottom: 1em;
+}
+
+.home-header span {
+  color: var(--cor02);
+}
+
+.home-header p,
+.home-header form {
+  margin-bottom: 1.2em;
+}
+
+.home-header input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.home-header input[type='text'] {
+  width: 60%;
+}
+
+.home-header input::placeholder {
+  color: #fff;
+}
+
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto 1em;
+}
+
+.order-container span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.order-container form {
+  margin: 0;
+}
+
+.order-container button {
+  margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.order-container :where(button:hover, i:hover, a:hover) {
+  color: var(--cor02)
+}
+
+.order-container :where(button, i, a) {
+  margin: 0 7px;
+}
+
+.toughts-container figure {
+  border-bottom: 1px solid #333;
+  padding: 0.5em;
+  max-width: 50%;
+  margin: 0 auto 1em;
+}
+
+.toughts-container blockquote {
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+
+.toughts-container span {
+  color: var(--cor02)
+}
+
+/* FOOTER */
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--cor02);
+}
+
+footer span {
+  color: var(--cor02);
+  font-weight: bold;
+}
